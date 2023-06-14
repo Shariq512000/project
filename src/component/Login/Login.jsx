@@ -1,5 +1,8 @@
 import React from 'react';
+import logo from "./images/logo1.png";
 import { Button } from '@mui/material';
+import pic1 from "./images/picture4.jpg";
+import "./Login.css";
 
 
 const Login = () => {
@@ -8,36 +11,52 @@ const Login = () => {
             <div className='container-fluid'>
                 <div className="row">
                     <div className="col-md-4">
-                        <img src="./images/logo1.png" alt="" />
-                        <h2>Log in to your account</h2>
-                        <p>Please enter your email and password</p>
-                        <form>
-                            <label htmlFor="username"></label>
-                            <input type="text" name='username' id='username' />
+                        <div className='logo1'>
+                            <img src={logo} alt="Logo Image" />
+                        </div>
+                        <div className='form1'>
+                            <h2>Log in to your account</h2>
+                            <p>Please enter your email and password</p>
+                            <form>
+                                <label htmlFor="username">Username</label>
+                                <br />
+                                <input type="text" name='username' id='username' />
+                                <br />
+                                <br />
 
-                            <label htmlFor="email"></label>
-                            <input type="email" name='email' id='email' />
+                                <label htmlFor="email">Email address</label>
+                                <br />
+                                <input type="email" name='email' id='email' />
+                                <br />
+                                <br />
 
-                            <label htmlFor="password"></label>
-                            <input type="password" name='password' id='password' />
+                                <label htmlFor="password">Password</label>
+                                <br />
+                                <input type="password" name='password' id='password' />
+                                <br />
+                                <br />
 
-                            <div className="row">
+                                <div className="row">
 
-                                <div className="col-md-6">
-                                    <input type="checkbox" id="remember" name="remember" value="Bike" />
-                                    <label for="remember"> keep me sign in</label>
+                                    <div className="col-md-6">
+                                        <input type="checkbox" id="remember" name="remember" value="Bike" />
+                                        {/* <label for="remember"> &nbsp; keep me sign in</label> */}
+                                        <p>Keep me Sign in</p>
+                                    </div>
+                                    <div className="col-md-6 text-end">
+                                        <a href="#"> Forget Password? </a>
+                                    </div>
+
                                 </div>
-                                <div className="col-md-6">
-                                    <a href="#"> forget password? </a>
-                                </div>
+                                <Button variant="contained">Sign in</Button>
 
-                            </div>
-                            <Button> Sign In </Button>
-
-                        </form>
+                            </form>
+                        </div>
                     </div>
-                    <div className="col-md-8">
-
+                    <div className="col-md-7">
+                        <div className='picture1'>
+                            <img src={pic1} alt="" />
+                        </div>
                     </div>
                 </div>
             </div>

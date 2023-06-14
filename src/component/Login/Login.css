@@ -1,0 +1,84 @@
+
+
+.container-fluid{
+    padding:50px !important;
+}
+.container-fluid .row:nth-child(1){
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.logo1{
+    padding-bottom: 100px;
+}
+.logo1 img{
+    width: 80%;
+}
+.col-md-4{
+    padding-top: 50px;
+}
+.form1{
+    padding-left: 20px;
+}
+.form1 h2{
+    font-weight: 700;
+    color: #375887;
+    padding-bottom: 25px;
+}
+.form1 p{
+    color: #9e9d9d;
+    padding-bottom: 40px;
+}
+.form1 p:nth-child(2){
+    padding-bottom: unset;
+    display: inline-block;
+    color: #9e9d9d;
+    padding-left: 5px;
+}
+.form1 a{
+    text-decoration: none;
+}
+.form1 label{
+    font-size: 12px;
+    color: #000000;
+    padding-bottom: 8px;
+}
+.form1 input{
+    padding: 15px 20px;
+    border: 1px solid #9e9d9d;
+    border-radius: 10px;
+    margin-left: 2px;
+    width: 100%;
+}
+.form1 input:hover{
+    border: 1px solid #CDDC39;
+}
+.form1 input:focus{
+    border: 1px solid #002B66 !important;
+    outline: none;
+}
+.form1 input[type=checkbox]{
+    padding: unset;
+    border: unset;
+    border-radius: unset;
+    margin-left: unset;
+    width: unset;
+}
+.MuiButton-root{
+    padding: 12px 0 !important;
+    text-transform: unset !important;
+    font-weight: 500 !important;
+    margin-top: 30px !important;
+    width: 100% !important;
+    font-size: 16px !important;
+    background-color: #002B66 !important;
+    border-radius: 8px !important;
+}
+.MuiButton-root:hover{
+    /* border: 1px solid #002B66 !important; */
+    background-color: #CDDC39 !important;
+    color: #002B66 !important;
+}
+.picture1 img{
+    border-radius: 100px 0;
+    width: 100%;
+}
